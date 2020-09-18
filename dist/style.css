@@ -34,4 +34,19 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(80%, #fd1d1d), to(#fcb045));
   background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 80%, #fcb045 100%);
 }
+
+.grid-parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 56.25em) {
+  .grid-parent {
+    -ms-grid-columns: 1fr 300px;
+        grid-template-columns: 1fr 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
